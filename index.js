@@ -1,10 +1,13 @@
 const numeroDigitado = prompt("tabuada do numero:");
-const n2 = 0;
-const contador =1;
+let n2 = 0;
+let contador =1;
+let resultado = 'Tabuada';
 
 while(n2 < 10)
 {
     n2 = n2 + 1;
     contador = numeroDigitado * n2;
-    const resposta = alert(`${numeroDigitado} x ${n2} = ${contador}`);
+    resultado = `${resultado}\n${numeroDigitado} x ${n2} = ${contador}`;
 }
+
+alert(resultado);
